@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Examples</title>
+    <!-- Internal CSS -->
+
+    <style>
+        table {
+            /* border: 2px solid red; */
+            width: 50%;
+            /* border-spacing: 0; */
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <h1>Student Information</h1>
+        <table>
+            <tr>
+                <th colspan="4">SPRK TECHNOLOGIES</th>
+
+            </tr>
+            <tr>
+                <th>Sr No.</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td rowspan="2">Shubham</td>
+                <td>+91 8585958575</td>
+                <td rowspan="2">80</td>
+            </tr>
+            <tr>
+
+                <td>+91 58585858</td>
+
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sanika Dabir</td>
+                <td>+91 10001 10001</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rohit Deshmukh</td>
+                <td>+91 25000 25000</td>
+                <td>60</td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

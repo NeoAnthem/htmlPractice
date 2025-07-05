@@ -1,0 +1,72 @@
+<!-- Validation -> Verification / Implement certain set of rules  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" required title="First Name Is Necessary">
+            <br>
+            <br>
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" required minlength="8">
+            <br>
+            <br>
+
+            <label for="email">Email <span style="color: red;">*</span></label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <br>
+            <label for="phone">Phone <span style="color: red;">*</span></label>
+            <input type="text" name="phone" id="phone" required pattern="[\d]{5} [\d]{5}" placeholder="14585 58958">
+            <br>
+            <br>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Portfolio</legend>
+            <label for="edu">Education</label>
+            <input type="text" name="edu" id="edu">
+            <br>
+            <br>
+            <label for="files">Select Certificates</label>
+            <input type="file" name="Certificates" id="files" multiple>
+            <br>
+            <br>
+            <label for="skill">SKILLS</label>
+            <select name="skills" id="skill" multiple>
+                <optgroup label="Engineering">
+                    <option>C++</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>Power BI</option>
+                </optgroup>
+                <optgroup label="Additional">
+                    <option>English For Business</option>
+                    <option>Group Discussion</option>
+                    <option>Aptitute</option>
+                    <option>General Knowledge</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+
+        </fieldset>
+        <br>
+        <br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+
+</html>
